@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 15px;
+
+  /* Brand palette (White / Green / Orange) */
+  --brand-primary: #16a34a;
+  --brand-primary-700: #15803d;
+  --brand-primary-800: #166534;
+  --brand-primary-soft: rgba(22, 163, 74, 0.12);
+  --brand-primary-soft-2: rgba(22, 163, 74, 0.18);
+  --brand-primary-border: rgba(22, 163, 74, 0.28);
+
+  --brand-accent: #f97316;
+  --brand-accent-600: #ea580c;
+  --brand-accent-light: #ff9933;
+  --brand-accent-soft: rgba(249, 115, 22, 0.16);
+  --brand-accent-border: rgba(249, 115, 22, 0.28);
+
+  /* UI neutrals */
+  --ui-bg: #ffffff;
+  --ui-surface: rgba(255, 255, 255, 0.96);
+  --ui-surface-strong: #ffffff;
+
+  --ui-ink: #0f2346;
+  --ui-ink-2: #102446;
+  --ui-copy: #3b5475;
+  --ui-muted: #4b5f7c;
+
+  --ui-line: rgba(15, 35, 70, 0.14);
+  --ui-line-strong: rgba(15, 35, 70, 0.18);
+
+  --ui-tint-primary: #f0fdf4;
+  --ui-tint-accent: #fff7ed;
+
+  color: var(--ui-ink);
+  background: var(--ui-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-shadow: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 860px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body,
+a,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
